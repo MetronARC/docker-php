@@ -8,7 +8,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      - name: Install Composer Dependencies
+      - name: Install Composer Dependency
         working-directory: ./app
         run: composer install --prefer-dist
       - name: Run Tests
